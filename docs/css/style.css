@@ -1,0 +1,84 @@
+/************ base styles *************/
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.75em;
+}
+.row > div > div{
+    background-color: grey;
+    border: 1px  black solid;
+    margin: 10px;
+}
+#p1, #p2, #p3 {
+    border: 1px black solid;
+    width: 80px;
+    float: right;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    clear: right;
+    padding: 10px;
+}
+
+/* specific styles */
+#p1{
+    background-color: #ffd857;
+}
+#p2{
+    background-color: #b1ff57;
+}
+#p3{
+    background-color: #ff8484;
+}
+
+/* simple responsive framework */
+.row {
+    position: relative;
+    width: 100%;
+}
+
+/************ large devices *************/
+
+@media (min-width: 1200px) {
+    .col-lg-4{
+        float: left;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+}
+
+/************ medium devices *************/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+}
+/************ small devices *************/
+
+@media (max-width: 991px) {
+    .col-sm-12{
+        float: left;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
